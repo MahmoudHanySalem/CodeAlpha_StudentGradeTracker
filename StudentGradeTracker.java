@@ -1,5 +1,6 @@
 package studentgradetracker;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -41,7 +42,7 @@ public class StudentGradeTracker {
                                 try {
                                     sid1 = input.nextInt();
                                     validID = false;
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an integer>>");
                                     // Clear the invalid input from the scanner buffer
                                     input.nextLine();
@@ -57,7 +58,7 @@ public class StudentGradeTracker {
                                     } else {
                                         System.out.println("Invalid value<<must be a number between 0 and 100 Inclusive>>");
                                     }
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an number>>");
                                     input.nextLine();
                                 }
@@ -73,7 +74,7 @@ public class StudentGradeTracker {
                                 try {
                                     sid = input.nextInt();
                                     validID = false;
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an integer between>>");
                                     // Clear the invalid input from the scanner buffer
                                     input.nextLine();
@@ -100,7 +101,7 @@ public class StudentGradeTracker {
                                 try {
                                     sid2 = input.nextInt();
                                     validID = false;
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an integer>>");
                                     input.nextLine();
                                 }
@@ -130,7 +131,7 @@ public class StudentGradeTracker {
                                 try {
                                     oldID = input.nextInt();
                                     validID = false;
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an integer>>");
                                     input.nextLine();// Clear the invalid input
                                 }
@@ -142,7 +143,7 @@ public class StudentGradeTracker {
                                 try {
                                     newID = input.nextInt();
                                     validIDn = false;
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an integer>>");
                                     input.nextLine();
                                 }
@@ -179,7 +180,7 @@ public class StudentGradeTracker {
                                 try {
                                     id1 = input.nextInt();
                                     validID = false;
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an integer>>");
                                     input.nextLine();// Clear the invalid input
                                 }
@@ -195,7 +196,7 @@ public class StudentGradeTracker {
                                     } else {
                                         System.out.println("Invalid value<<must be a number between 0 and 100 Inclusive>>");
                                     }
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an number>>");
                                     input.nextLine();
                                 }
